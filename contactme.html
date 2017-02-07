@@ -34,6 +34,16 @@
             background-color:gray;
 
         }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            border: 4px solid blue;
+            border-radius: 3px;
+            padding: 15px;
+            background-color:white;
+
+        }
 
     </style>
 </head>
@@ -42,7 +52,7 @@
 
 <body class="homepage">
 
-<div class="mainpic">
+<div>
     <div class="navsection">
         <a href="homepage.html" class="homepage.html"> Home</a>
         <a href="aboutme.html" class="aboutme.html"> About Me</a>
@@ -51,9 +61,18 @@
         <a href="resume.html"> Resume</a>
 
     </div>
+
 </div>
 
 <div class="mytitle">Contact Me</div>
+
+    <div class="container">
+        What is your name?<input type="text" placeholder="Name">
+        What is your email address?<input type="email" placeholder="@email.com">
+        Comments or questions<textarea placeholder="Type here" style="margin: 0px; width: 203px; height: 141px;"></textarea>
+        <input type="submit">
+    </div>
+
 
 
 
