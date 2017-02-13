@@ -34,15 +34,16 @@
             background-color:gray;
 
         }
-        .container{
+        .contactme{
             display: flex;
             flex-direction: column;
-            width: 200px;
+            width: 250px;
+            height:300px;
             border: 4px solid blue;
             border-radius: 3px;
             padding: 15px;
             background-color:white;
-
+            margin: 0 auto;
         }
 
     </style>
@@ -51,6 +52,7 @@
 
 
 <body class="homepage">
+<div class="container">
 
 <div>
     <div class="navsection">
@@ -58,23 +60,34 @@
         <a href="aboutme.html" class="aboutme.html"> About Me</a>
         <a href="schoolprojects.html"> School Projects</a>
         <a href="contactme.html"> Contact Me</a>
-        <a href="resume.html"> Resume</a>
+        <a href="resume.html">Resume</a>
+
 
     </div>
-
 </div>
 
-<div class="mytitle">Contact Me</div>
+<center><div class="mytitle">Contact Me</div></center>
 
-    <div class="container">
-        What is your name?<input type="text" placeholder="Name">
-        What is your email address?<input type="email" placeholder="@email.com">
-        Comments or questions<textarea placeholder="Type here" style="margin: 0px; width: 203px; height: 141px;"></textarea>
-        <input type="submit">
+
+<form>
+    <div>
+        <div class="contactme">
+            <div class="form-group">
+                <label for="name">What is your name?</label><input id="name" type="text" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                    <label for="emailaddress">What is your email address?</label><input id="emailaddress" placeholder="@email.com" type="email">
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments or questions</label><textarea id="comments" placeholder="Type here" style="margin: 0px; width: 203px; height: 141px;"></textarea>
+            </div>
+
+            <input type="submit">
+        </div>
     </div>
-
-
-
-
+</form>
+</div>
 </body>
 </html>
