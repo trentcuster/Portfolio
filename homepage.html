@@ -3,7 +3,10 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 
     <style>
 
@@ -19,17 +22,21 @@
         .navsection a{
             color: #FFF;
             font-family:'PT Sans', serif;
+            font-size: large;
         }
-        .mytitle{
-            font-size: 25px;
-            margin: 50px 0px 30px 15px;
-            text-decoration:none;
 
-        }
         .homepage
         {
             background-color:gray;
 
+        }
+        .columnWrapper{
+            float: left;
+            width: 300px;
+            min-height:400px;
+        }
+        .block{
+            font-size: medium;
         }
 
     </style>
@@ -51,9 +58,37 @@
     </div>
 </div>
 
-<div class="mytitle">Home Page</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-lg-3" class="columnWrapper">
+            <h1>About Me</h1>
+            <div >
+                <blockquote class="block">My name is Trenton Custer and I am 19 years old. All of my life I have played sports and loved wight lifting. Recently in this last year I have started doing duel sport adventure bike riding. It may have a techincal and long name but it's essentially a motorcycle made to go on pavement and dirt. You go on a ride for a day, camp somewhere and drive back the next day. I got involved with computer programming in high school with a very simple C# class. Found out it was something I really enjoyed so I started looking for ways that I could program through college. I'm hoping with this program I can get enough of a foundational knowledge to be able to start at an entry level job and work my way to getting my degree.  </blockquote>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3">
+            <img src="images/Copy%20of%20IMG_20160701_180611392.jpg" class="img-thumbnail">
+            <img src="images/IMG_20160905_114040979.jpg" class="img-thumbnail">
+        </div>
+
+        <div class="col-md-3 col-lg-3">
+            <img src="images/IMG_20160701_215839290.jpg" class="img-thumbnail">
+            <img src="images/IMG_20160603_195149651.jpg" class="img-thumbnail">
+        </div>
+
+        <div class="col-md-3 col-lg-3">
+            <img src="images/IMG_20160702_084106731.jpg" class="img-thumbnail">
+            <img src="images/IMG_20160904_191011011.jpg" class="img-thumbnail">
+        </div>
+
+    </div>
+</div>
 
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src=" js/bootstrap.js"></script>
 
 </body>
 </html>
